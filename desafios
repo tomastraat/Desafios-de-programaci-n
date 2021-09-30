@@ -1,0 +1,40 @@
+Desafío de programación #6: Calcula 10! (10 factorial)
+
+function multiplicacionFactorial (array) {
+    let multiplicarNumeros = 1;
+
+    for (let i = 0; i < array.length; i++) {
+        multiplicarNumeros = multiplicarNumeros * array [i];
+    }
+    console.log(`Factorial 10 es igual a ${multiplicarNumeros}`);
+}
+const factorialDiez = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+
+multiplicacionFactorial(factorialDiez);
+
+Desafio 7 - Calcula la suma de todos los números impares mayores que 10 y menores que 30
+
+function calcularSuma () {
+    let sumatoriaNumeros = 0;
+
+    for (let i = 11; i < 30; i = i + 2)  {
+        sumatoriaNumeros = sumatoriaNumeros + i;
+    }   
+    console.log(`La suma de todos los numeros es ${sumatoriaNumeros}`);
+}
+calcularSuma (); 
+
+Desafío de programación #8: Crea una función que convierta de Celsius a Fahrenheit
+                                                                                                                    //Mi funcion nunca deberia depender de una variable global.
+function convertCelsiusToFahrenheit (c) {     
+    return c * 1.8 + 32; 
+}
+console.log(convertCelsiusToFahrenheit(50));
+
+Desafío de programación #9: Crea una función que convierta de Fahrenheit a Celsius
+
+function convertFahrenheitToCelsius (f) {
+    return f - 32 / 1.8
+}
+console.log(convertFahrenheitToCelsius(100));
+
